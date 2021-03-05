@@ -1,0 +1,16 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/lee/hercafecase/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_5177e846"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/lee/hercafecase/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_f05f75a2"
+  }
+]
