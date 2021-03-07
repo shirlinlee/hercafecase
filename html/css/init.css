@@ -54,7 +54,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.header .logo {
+
+.header {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.logo {
   width: 237px;
   margin: 14px 0;
 }
