@@ -1,5 +1,5 @@
 <template>
-  <a><slot /></a>
+  <a class="btn"><slot /></a>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-a {
+.btn {
   margin-right: 15px;
   border-radius: 10px;
   display: inline-block;

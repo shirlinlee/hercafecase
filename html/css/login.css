@@ -1,0 +1,47 @@
+.login_wrapper {
+  border-radius: 30px;
+  background-color: #fff;
+  max-width: 690px;
+  padding: 60px 70px;
+  margin: 60px auto 20px;
+}
+
+h3 {
+  margin: 0 0 60px;
+  font-size: 24px;
+}
+
+.btn_area {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.link_underline {
+  margin-left: 20px;
+  padding-top: 11px;
+}
+
+.veiw {
+  display: none;
+}
+
+.veiw.active {
+  display: block;
+}
+
+@media (max-width: 599px) {
+  .login_wrapper {
+    padding: 30px 20px;
+    margin: 30px auto 20px;
+  }
+}
+@media (max-width: 599px) {
+  .btn_area {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 599px) {
+  h3 {
+    font-size: 18px;
+  }
+}
