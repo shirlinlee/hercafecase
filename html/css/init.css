@@ -8,17 +8,21 @@ html body {
   box-sizing: border-box;
   webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
 }
 *:focus {
   border-color: none;
   box-shadow: none;
   outline: none;
 }
+
+div {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
 body {
   text-align: center;
   background-color: #f5eade;
@@ -86,9 +90,22 @@ body {
   color: #5a5a5a;
 }
 
-.nav > li.active {
-  background-color: #e49189;
-  color: #fff;
+.with_list {
+  position: relative;
+  padding-right: 30px;
+}
+
+.with_list:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  right: 0;
+  border: 2px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg) translate(0%, -110%);
 }
 
 .sub_list {
@@ -102,6 +119,8 @@ body {
   display: grid;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  opacity: 0;
+  z-index: -1;
 }
 
 .sub_list li {
@@ -117,6 +136,20 @@ body {
 
 .sub_list li:hover {
   font-weight: bold;
+}
+
+.nav > li.active {
+  background-color: #e49189;
+  color: #fff;
+}
+
+.nav > li.active .sub_list {
+  opacity: 1;
+  z-index: 1;
+}
+
+.nav > li.active .with_list:after {
+  border-color: #fff;
 }
 
 .footer {
@@ -154,7 +187,7 @@ body {
   border-radius: 30px;
   background-color: #ffffff;
   padding: 30px;
-  width: 100%;
+  width: calc(100% - 40px);
   margin: 50px auto;
 }
 
@@ -238,7 +271,6 @@ body {
   border-top: none;
   border-right: none;
   transform: rotate(-45deg) translate(0%, -110%);
-  transition: 0.2s;
 }
 
 .label .checkbox_wrap {
@@ -256,7 +288,6 @@ body {
   border-top: none;
   border-right: none;
   transform: rotate(-45deg) translate(0%, -110%);
-  transition: 0.2s;
 }
 .label .checkbox_wrap input:checked + label:after {
   border-color: #fff;
