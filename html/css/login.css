@@ -1,9 +1,12 @@
-.login_wrapper {
-  border-radius: 30px;
-  background-color: #fff;
+#login {
   max-width: 690px;
-  padding: 60px 70px;
-  margin: 60px auto 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#login .content{
+  padding: 70px;
 }
 
 h3 {
@@ -17,31 +20,46 @@ h3 {
 }
 
 .link_underline {
-  margin-left: 20px;
+  margin-left: 15px;
   padding-top: 11px;
 }
 
-.veiw {
+.view {
   display: none;
 }
 
-.veiw.active {
+.view.active {
   display: block;
 }
 
+.title {
+  display: inline-block;
+  width: 270px;
+  line-height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  background-color: #c45555;
+  color: #fff;
+}
+
 @media (max-width: 599px) {
+  #login .content{
+    padding: 30px;
+  }
+
   .login_wrapper {
     padding: 30px 20px;
     margin: 30px auto 20px;
   }
-}
-@media (max-width: 599px) {
+
   .btn_area {
     padding-top: 20px;
   }
-}
-@media (max-width: 599px) {
+
   h3 {
     font-size: 18px;
   }
+  
 }
+

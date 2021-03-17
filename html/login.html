@@ -19,33 +19,39 @@
   <body>
     <div class="header">
       <div class="W1440">
-        <img src="/images/logo.png" alt class="logo" />
-        <ul>
+        <img src="img/logo.png" alt class="logo" />
+        <ul class="nav">
           <li>
-            <a href="#" target="_blank" rel="noopener">目錄選項</a>
+            <p>找課程</p>
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener">目錄選項</a>
+            <p>找場地</p>
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener">目錄選項</a>
+            <p>最新消息</p>
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener">目錄選項</a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener">目錄選項</a>
+            <p class="with_list">會員專區</p>
+            <ul class="sub_list">
+              <li><a href="login.html">登入/註冊</a></li>
+              <li>個人資料</li>
+              <li>預定訂單</li>
+              <li>切換身份</li>
+            </ul>
           </li>
         </ul>
+        <div class="menu"></div>
       </div>
     </div>
     <div id="login">
-      <div class="login_wrapper">
+      <div class="content">
         <div class="switch_btn">
-          <p class="active">登入</p>
-          <p>註冊</p>
+          <a class="active" data-to="login">登入</a>
+          <a data-to="signup">註冊</a>
         </div>
-        <div class="veiw active">
+
+        <!-- 01-1登入會員 -->
+        <div class="view active" data-view="login" data-switch-show="true">
           <div class="label">
             <p>使用者帳號</p>
             <input name="account" placeholder="請輸入E-Mail" />
@@ -55,13 +61,15 @@
             <p>密碼</p>
             <input type="password" name="pw" placeholder="請輸入密碼" />
             <!---->
-            <a href="#" class="link_underline">忘記密碼</a>
+            <a href="javascript:;" class="link_underline" data-to="forgot">忘記密碼</a>
           </div>
           <div class="btn_area">
             <a class="btn">我要登入</a>
           </div>
         </div>
-        <div class="veiw">
+
+        <!-- 01-2會員申請 -->
+        <div class="view" data-view="signup" data-switch-show="true">
           <div class="label">
             <p>中文姓名</p>
             <input name="name" placeholder="請輸入姓名" />
@@ -120,7 +128,7 @@
               <input type="checkbox" name="areement" id="areement" />
               <label for="areement"></label>
             </div>
-            <a href="#" class="link_underline"
+            <a href="javascript:;" class="link_underline" style="padding-top: 0; margin-left: 0"
               ><b>同意個人資料運用告知聲明</b></a
             >
           </div>
@@ -128,8 +136,74 @@
             <a class="btn">我要註冊</a>
           </div>
         </div>
+
+        <!-- 02-1忘記密碼 -->
+        <!-- 02-3沒有這個帳號 -->
+        <div class="view" data-view="forgot">
+          <div class="title">
+            忘記密碼
+          </div>
+          <div class="label">
+            <p>忘記密碼別慌張！輸入Email會發一封信件給你</p>
+            <input type="email" name="" placeholder="請輸入E-Mail" />
+            <span class="err_msg">無此帳號</span>
+          </div>
+          <div class="btn_area">
+            <a class="btn" data-to="resentPW">送出</a>
+          </div>
+        </div>
+
+        <!-- 02-2忘記密碼 -->
+        <div class="view" data-view="resentPW">
+          <div class="title">
+            Email已寄出
+          </div>
+          <div class="label">
+            <p>內含重設密碼連結的郵件已發送至你的信箱，請查看郵件並依指示重設密碼。</p>
+          </div>
+          <div class="btn_area">
+            <a class="btn" data-to="modifyPW">重新登入</a>
+          </div>
+        </div>
+
+        <!-- 03-1修改密碼 -->
+        <!-- 03-1修改密碼失敗 -->
+        <div class="view" data-view="modifyPW">
+          <div class="title">
+            修改密碼
+          </div>
+          <div class="label">
+            <p>新密碼</p>
+            <input type="email" name="" placeholder="請輸入新密碼" />
+          </div>
+          <div class="label">
+            <p>確認密碼</p>
+            <input type="email" name="" placeholder="再輸入一次新密碼" />
+            <span class="err_msg">兩次密碼輸入不相符</span>
+          </div>
+          <div class="btn_area">
+            <a class="btn" data-to="successSettingPW">送出</a>
+          </div>
+        </div>
+
+        <!-- 03-2修改密碼 -->
+        <div class="view" data-view="successSettingPW">
+          <div class="title">
+            已成功修改密碼
+          </div>
+          <div class="label">
+            <p>您的密碼修改成功，請再登入一次</p>
+          </div>
+          <div class="btn_area">
+            <a class="btn" data-to="login">重新登入</a>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </body>
 </html>
 <script src="js/init.js" defer></script>
+<script src="js/login.js" defer></script>
+
