@@ -1,0 +1,27 @@
+#class {
+  margin-top: 45px;
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#class .search{
+  padding: 70px;
+  background-color: #e49189;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+}
+
+#class .search .label {
+  width: 33%;
+}
+
+
+
+@media (max-width: 599px) {
+  
+  
+}
+
