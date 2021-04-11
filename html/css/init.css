@@ -163,7 +163,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   padding: 20px;
@@ -227,7 +227,7 @@ body {
   line-height: 1.5;
 }
 
-.label.white p{
+.label.white p {
   color: #fff;
 }
 
@@ -252,10 +252,9 @@ body {
 }
 
 .label.white input,
-.label.white select
-{
+.label.white select {
   color: #4c4c4c;
-  background-color: #fff;
+  background-color: #eaeaea;
 }
 
 .label input::placeholder,
