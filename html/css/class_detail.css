@@ -1,0 +1,159 @@
+#class_detail {
+  margin-top: 145px;
+  width: calc(100% - 40px);
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fdfbf7;
+  border-radius: 30px;
+  padding: 70px 90px;
+  margin-bottom: 90px;
+}
+
+#class_detail ~ .footer {
+  position: relative;
+}
+
+.img_wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main_img, .sub_img { 
+    border-radius: 20px; 
+    border: solid 1px #dcdcdc; 
+    background-color: #ffffff; 
+    -webkit-border-radius: 20px; 
+    -moz-border-radius: 20px; 
+    -ms-border-radius: 20px; 
+    -o-border-radius: 20px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+ .main_img {
+    width: 60%;
+}
+
+.main_img:after {
+    content: "";
+    display: block;
+    padding-bottom: 70%;
+}
+
+.sub_img {
+    width: calc(40% - 20px);
+    margin-left: 20px;
+}
+
+.sub_img:after {
+    content: "";
+    display: block;
+    padding-bottom: calc(60% - 22px);
+}
+
+.subject>*, .text p {
+    text-align: left;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.subject h2{
+    font-size: 18px;
+    color: #030303;
+}
+
+.subject h3{
+    font-size: 16px;
+}
+
+.text{
+    font-size: 14px;
+    color: #565656;
+    line-height: 1.4;
+
+}
+
+.text .th{
+    position: relative;
+    padding-left: 70px;
+    padding-right: 30px;
+    min-height: 20px;
+}
+
+.text .th span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.column {
+    margin: 20px auto;
+    text-align: left;
+}
+
+.teacher {
+    display: flex;
+}
+
+.teacher .main_img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+/* .info, .notice {
+    width: calc(50% - 150px);
+    flex-shrink: 0;
+} */
+
+.notice .student_notice {
+    max-width: 260px;
+    font-size: 13px;
+}
+
+.must_know {
+    flex-shrink: 0;
+}
+
+.notice {
+    flex-shrink: 0;
+    
+}
+
+.flex .W50:first-child {
+    padding-right: 30px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.grey_column {
+    background-color: #eeeeee;
+    border: solid 1px #dcdcdc;
+    padding: 15px 15px 25px;
+    border-radius: 10px;
+
+}
+
+.step2 {
+    /* display: none; */
+}
+
+@media (min-width: 769px) {
+
+}
+
+@media (max-width: 768px) {
+ 
+}
+@media (max-width: 599px) {
+  #class_detail {
+    margin-top: 80px;
+  }
+
+}

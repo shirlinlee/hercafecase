@@ -38,6 +38,12 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+b {
+  font-weight: bold;
+}
+.f_red {
+  color: #ff0000;
+}
 .f_pink {
   color: #e49189;
 }
@@ -46,6 +52,9 @@ body {
 }
 .f_white {
   color: #fff;
+}
+.f_black {
+  color: #030303;
 }
 .bg_pink {
   background-color: #f5eade;
@@ -56,6 +65,15 @@ body {
 .bg_d_grey {
   background-color: #565656;
 }
+.W50 {
+  width: 50%;
+}
+
+.W100 {
+  display: inline-block;
+  width: 100%;
+}
+
 .W1060 {
   width: 100%;
   max-width: 1060px;
@@ -69,14 +87,29 @@ body {
   margin-right: auto;
 }
 
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header,
 .footer {
+  position: fixed;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
   height: 100px;
   background-color: #fff;
   width: 100%;
+  z-index: 30;
 }
 
 .logo {
@@ -417,17 +450,17 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    height: 70px;
+    height: 60px;
     padding: 0 15px;
     border-bottom: 1px solid #f5e9dd;
   }
   .header .logo {
-    width: 160px;
-    margin: 10px 0;
+    width: 150px;
+    margin: 5px 0;
   }
   .nav {
     position: absolute;
-    top: 70px;
+    top: 60px;
     width: 100vw;
     left: 0;
     background-color: #fff;
@@ -462,7 +495,7 @@ body {
     background: #db9081;
     width: 40px;
     height: 40px;
-    top: 15px;
+    top: 10px;
     right: 15px;
     display: block;
     position: absolute;
@@ -525,4 +558,20 @@ body {
   .switch_btn a {
     font-size: 16px;
   }
+}
+
+@media (max-width: 599px) {
+.label {
+  margin-bottom: 12px;
+}
+
+.label p {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.label input,
+.label select {
+  font-size: 14px !important;
+}
 }
