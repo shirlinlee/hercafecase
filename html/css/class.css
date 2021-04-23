@@ -77,6 +77,8 @@
   border: solid 1px #dcdcdc;
   position: absolute;
   left: 20px;
+  background-position: center;
+  background-size: cover;
 }
 
 .class_item .text {

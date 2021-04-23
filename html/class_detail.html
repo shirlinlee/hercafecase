@@ -45,9 +45,9 @@
     </div>
     <div id="class_detail" class="mt145">
         <div class="img_wrapper">
-            <div class="main_img"></div>
-            <div class="sub_img"></div>
-            <div class="sub_img"></div>
+            <div class="main_img" style="background-image: url(https://cdn.store-assets.com/s/259946/f/4563329.jpeg)"></div>
+            <div class="sub_img" style="background-image: url(https://cdn.store-assets.com/s/259946/f/4563329.jpeg)"></div>
+            <div class="sub_img" style="background-image: url(https://cdn.store-assets.com/s/259946/f/4563329.jpeg)"></div>
         </div>
         <div class="subject">
             <h2 class="f_black">恰膨紗 花朵圍巾(鈎針)</h2>
@@ -187,7 +187,7 @@
             </div>
 
 
-            <a href="javascript:;" class="sign_up btn">我要報名</a>
+            <a href="javascript:;" class="sign_up btn"><span class="step1">我要報名</span><span class="step2">確認送出</span></a>
 
         </div>
 
@@ -217,5 +217,7 @@
 <script>
     $('body').on('click', '.sign_up', function(){
         $('.step2').show();
+        $('.step1').hide();
+
     });
 </script>
