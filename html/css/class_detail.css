@@ -1,17 +1,16 @@
 #class_detail {
-  margin-top: 145px;
-  width: calc(100% - 40px);
-  max-width: 990px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fdfbf7;
-  border-radius: 30px;
-  padding: 70px 90px;
-  margin-bottom: 90px;
+    width: calc(100% - 40px);
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdfbf7;
+    border-radius: 30px;
+    padding: 70px 90px;
+    margin-bottom: 90px;
 }
 
 #class_detail ~ .footer {
-  position: relative;
+    position: relative;
 }
 
 .img_wrapper {
@@ -32,7 +31,7 @@
     margin-bottom: 20px;
 }
 
- .main_img {
+.main_img {
     width: 60%;
 }
 
@@ -53,10 +52,9 @@
     padding-bottom: calc(60% - 22px);
 }
 
-.subject>*, .text p {
+.subject>* {
     text-align: left;
-    margin-bottom: 5px;
-    line-height: 1.4;
+    margin-bottom: 10px;
 }
 
 .subject h2{
@@ -71,15 +69,19 @@
 .text{
     font-size: 14px;
     color: #565656;
-    line-height: 1.4;
+    text-align: left;
+}
 
+.text * {
+    line-height: 1.6;
 }
 
 .text .th{
     position: relative;
     padding-left: 70px;
     padding-right: 30px;
-    min-height: 20px;
+    min-height: 25px;
+    font-size: 15px;
 }
 
 .text .th span {
@@ -130,6 +132,7 @@
 hr {
     border: none;
     border-bottom: 1px solid #dcdcdc;
+    margin: 35px auto;
 }
 
 .grey_column {
@@ -137,23 +140,65 @@ hr {
     border: solid 1px #dcdcdc;
     padding: 15px 15px 25px;
     border-radius: 10px;
+}
 
+.pink_column {
+    background-color: #efc5bf;
+    border: solid 1px #dcdcdc;
+    padding: 15px 15px 25px;
+    border-radius: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .step2 {
     /* display: none; */
 }
 
+.radio_group {
+    margin-top: 15px;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio_group input{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 7px 0 0;
+}
+
+.radio_group input:checked {
+    background-color: #c45555;
+    /* border: 1px solid #fff; */
+}
+
+.radio_group label{
+    width: calc(100% - 30px);
+    padding: 0;
+}
+
+#class_detail .btn {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+
 @media (min-width: 769px) {
 
 }
 
 @media (max-width: 768px) {
- 
+
 }
 @media (max-width: 599px) {
-  #class_detail {
-    margin-top: 80px;
-  }
 
 }

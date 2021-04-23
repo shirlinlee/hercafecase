@@ -226,12 +226,15 @@ b {
   margin-top: -5px;
 }
 
+.mt145 {
+  margin-top: 145px;
+}
+
 .content {
   border-radius: 30px;
   background-color: #ffffff;
   padding: 30px;
   width: calc(100% - 40px);
-  margin: 50px auto;
 }
 
 .link_underline {
@@ -242,7 +245,7 @@ b {
   border-bottom: 1px solid #5a5a5a;
 }
 .label {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -258,6 +261,12 @@ b {
   color: #000;
   padding-left: 15px;
   line-height: 1.5;
+}
+
+.label.grey p {
+  padding-left: 0;
+  font-size: 13px;
+  margin-bottom: 5px;
 }
 
 .label.white p {
@@ -287,13 +296,32 @@ b {
 .label.white input,
 .label.white select {
   color: #4c4c4c;
+  background-color: #eaeaea;  
+}
+
+.label.grey input,
+.label.grey select {
+  color: #4c4c4c;
   background-color: #eaeaea;
+  border: solid 1px #dcdcdc;
+  font-size: 13px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .label input::placeholder,
 .label select::placeholder {
   color: #ddd;
 }
+
+.label.grey input::placeholder,
+.label.grey select::placeholder {
+  color: #565656;
+}
+
 .label input[type="checkbox"],
 .label select[type="checkbox"] {
   width: 40px;
@@ -382,11 +410,13 @@ b {
   margin-right: 15px;
   border-radius: 10px;
   display: inline-block;
-  line-height: 45px;
+  line-height: 45px !important;
   color: #fff;
   background-color: #565656;
   width: 100%;
   cursor: pointer;
+  text-align: center !important;
+  letter-spacing: 5px;
 }
 
 .pagination {
@@ -557,6 +587,10 @@ b {
   }
   .switch_btn a {
     font-size: 16px;
+  }
+
+  .mt145 {
+    margin-top: 80px;
   }
 }
 

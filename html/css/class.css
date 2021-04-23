@@ -1,5 +1,4 @@
 #class {
-  margin-top: 145px;
   width: calc(100% - 40px);
   max-width: 990px;
   margin-left: auto;
@@ -144,10 +143,6 @@
   }
 }
 @media (max-width: 599px) {
-  #class {
-    margin-top: 80px;
-  }
-
   #class .search {
     flex-direction: column;
     padding: 20px 20px 0;
