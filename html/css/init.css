@@ -296,7 +296,7 @@ b {
 .label.white input,
 .label.white select {
   color: #4c4c4c;
-  background-color: #eaeaea;  
+  background-color: #eaeaea;
 }
 
 .label.grey input,
@@ -422,13 +422,12 @@ b {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  list-style: none; 
+  list-style: none;
   margin: 40px auto;
 }
 
 .pagination li {
   display: inline-block;
-
 }
 
 .pagination li a {
@@ -439,7 +438,7 @@ b {
   line-height: 28px;
   color: #565656;
   background-color: #fff;
-  border: 1px solid #a4b7c1; 
+  border: 1px solid #a4b7c1;
   font-size: 12px;
   margin: 0 2px;
   border-radius: 5px;
@@ -449,7 +448,7 @@ b {
   z-index: 1;
   color: #fff;
   background-color: #e49189;
-  border-color: #e49189; 
+  border-color: #e49189;
 }
 
 .pagination li.disabled a {
@@ -459,6 +458,38 @@ b {
   background-color: #f5f2ed;
 }
 
+.tab_wrapper {
+  background-color: #eeeeee;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tab_wrapper > * {
+  width: 50%;
+  line-height: 50px;
+  color: #fff;
+}
+
+.tab_wrapper .active {
+  background-color: #c45555;
+}
+
+.status_wrapper {
+  line-height: 40px;
+  padding: 30px 0;
+  background-color: #eeeeee;
+  display: inline-block;
+  width: 100%;
+}
+
+.status_wrapper > * {
+  color: #949494;
+  float: left;
+}
 
 @media (min-width: 769px) {
   .sub_list li:hover {
@@ -473,7 +504,7 @@ b {
     z-index: 1;
     color: #fff;
     background-color: #e49189;
-    border-color: #e49189; 
+    border-color: #e49189;
     cursor: pointer;
   }
 }
@@ -599,17 +630,17 @@ b {
 }
 
 @media (max-width: 599px) {
-.label {
-  margin-bottom: 12px;
-}
+  .label {
+    margin-bottom: 12px;
+  }
 
-.label p {
-  font-size: 14px;
-  margin-bottom: 7px;
-}
+  .label p {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
 
-.label input,
-.label select {
-  font-size: 14px !important;
-}
+  .label input,
+  .label select {
+    font-size: 14px !important;
+  }
 }
