@@ -468,10 +468,15 @@ b {
   overflow: hidden;
 }
 
-.tab_wrapper > * {
+.tab {
   width: 50%;
   line-height: 50px;
   color: #fff;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
 }
 
 .tab_wrapper .active {
@@ -480,16 +485,55 @@ b {
 
 .status_wrapper {
   line-height: 40px;
-  padding: 30px 0;
+  margin: 30px 0 0;
   background-color: #eeeeee;
   display: inline-block;
-  width: 100%;
+  width: calc(100% - 60px);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
-.status_wrapper > * {
+.status_wrapper li {
   color: #949494;
   float: left;
+  padding: 0 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
 }
+
+.status_wrapper li.active {
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+
+.booked_status {
+  text-align: left;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid #dcdcdc;;
+}
+
+.booked_status>*{
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #565656;
+}
+
+.booked_status h6{
+  font-size: 16px;
+  color: #ff5454;
+}
+
 
 @media (min-width: 769px) {
   .sub_list li:hover {
@@ -507,6 +551,13 @@ b {
     border-color: #e49189;
     cursor: pointer;
   }
+  .status_wrapper li:not(.active):hover {
+    color: #555;
+  }
+  .tab:not(.active):hover {
+    background-color: #ddd;
+
+}
 }
 
 @media (max-width: 768px) {

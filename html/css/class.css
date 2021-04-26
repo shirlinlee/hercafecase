@@ -53,13 +53,46 @@
   margin-bottom: 90px;
 }
 
+.booking_list_header, .booking_list_data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.booking_list_header {
+  line-height: 1.5;
+  font-size: 13px;
+  color: #565656;
+  padding: 10px 0;
+}
+
+.booking_list_data .class_item {
+  border-bottom: none;
+}
+
+.info {
+  width: 70%;
+}
+
+.price, .status {
+  width: 15%;
+  text-align: left;
+}
+
+.price font{
+  font-size: 12px;
+  display: block;
+  padding: 5px 0 0;
+  color: #565656;
+}
+
 .class_item {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   position: relative;
   border-bottom: 1px solid #dcdcdc;
-  cursor: pointer;
   transition:all .3s;
   -webkit-transition:all .3s;
   -moz-transition:all .3s;
@@ -134,7 +167,8 @@
 }
 
 @media (min-width: 769px) {
-  .class_item:hover {
+  a.class_item:hover {
+    cursor: pointer;
     background: #f5f2ed;
   }
 }
