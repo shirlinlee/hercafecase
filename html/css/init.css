@@ -69,6 +69,14 @@ b {
   background-color: #565656;
 }
 
+.t_left {
+  text-align: left;
+}
+
+.t_right {
+  text-align: right;
+}
+
 .W50 {
   width: 50%;
 }
@@ -89,6 +97,10 @@ b {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.pb50 {
+  padding-bottom: 50px;
 }
 
 .pb20 {

@@ -1,11 +1,11 @@
-#login {
+#login, #search {
   max-width: 690px;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-#login .content{
+#login .content, #search .content{
   padding: 70px;
 }
 
